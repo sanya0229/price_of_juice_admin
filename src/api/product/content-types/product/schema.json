@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": "Product table data"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product": {
+      "type": "string",
+      "required": true
+    },
+    "activeSubstance": {
+      "type": "string",
+      "required": true
+    },
+    "volume": {
+      "type": "string",
+      "required": true
+    },
+    "stock": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "tableType": {
+      "type": "enumeration",
+      "enum": [
+        "first",
+        "second",
+        "third"
+      ],
+      "default": "first",
+      "required": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "sortOrder": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
