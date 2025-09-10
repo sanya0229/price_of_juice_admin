@@ -38,7 +38,7 @@ const config = {
   // Admin Credentials (for development/testing only)
   admin: {
     login: process.env.REACT_APP_ADM_LOGIN || 'admin',
-    password: process.env.REACT_APP_ADM_PSSWRD || 'admin',
+    password: process.env.REACT_APP_ADM_PSSWRD || 'Biocore123&',
   },
 
   // Security Configuration

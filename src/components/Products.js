@@ -144,12 +144,6 @@ const Products = () => {
       <header className="products-header">
         <Link to="/" className="back-button">← Back to Dashboard</Link>
         <h1>Products Management</h1>
-        <button 
-          onClick={() => setShowAddForm(true)} 
-          className="add-button"
-        >
-          + Add New Product
-        </button>
       </header>
 
       {error && <div className="error-message">{error}</div>}
@@ -254,15 +248,6 @@ const Products = () => {
           <div className="modal">
             <h2>Edit Product Row {editingProduct?.row}</h2>
             <form onSubmit={handleEditProduct}>
-              <div className="form-group">
-                <label>Row Number:</label>
-                <input
-                  type="number"
-                  value={editForm.row}
-                  onChange={(e) => setEditForm({...editForm, row: parseInt(e.target.value)})}
-                  required
-                />
-              </div>
 
               <div className="insides-section">
                 <h3>Product Items</h3>
@@ -320,7 +305,7 @@ const Products = () => {
                     </div>
                   </div>
                 ))}
-                
+
                 <button type="button" onClick={addInsideItem} className="add-item-button">
                   + Add Item
                 </button>

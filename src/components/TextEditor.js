@@ -3,17 +3,21 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './TextEditor.css';
 
+// Text editor component for managing website content
 const TextEditor = () => {
+  // State management for text content and UI states
   const [textContent, setTextContent] = useState('');
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
+  // Load text content on component mount
   useEffect(() => {
     fetchTextContent();
   }, []);
 
+  // Fetch text content from API
   const fetchTextContent = async () => {
     try {
       setLoading(true);
@@ -28,6 +32,7 @@ const TextEditor = () => {
     }
   };
 
+  // Save text content to API
   const handleSave = async () => {
     try {
       setSaving(true);
@@ -48,23 +53,28 @@ const TextEditor = () => {
     }
   };
 
+  // Reset text content to original
   const handleReset = () => {
     fetchTextContent();
   };
 
+  // Show loading state
   if (loading) return <div className="loading">Loading text content...</div>;
 
   return (
     <div className="text-editor-container">
+      {/* Header with navigation */}
       <header className="text-editor-header">
         <Link to="/" className="back-button">← Back to Dashboard</Link>
         <h1>Text Content Editor</h1>
       </header>
 
+      {/* Error and success messages */}
       {error && <div className="error-message">{error}</div>}
       {success && <div className="success-message">{success}</div>}
 
       <div className="text-editor-content">
+        {/* Text editing section */}
         <div className="editor-section">
           <label htmlFor="text-content">Website Text Content:</label>
           <textarea
@@ -75,13 +85,10 @@ const TextEditor = () => {
             rows={15}
             className="text-area"
           />
-          
-          <div className="text-info">
-            <p>This text will be displayed on your website. You can use HTML tags for formatting.</p>
-            <p>Current length: {textContent.length} characters</p>
-          </div>
+
         </div>
 
+        {/* Action buttons */}
         <div className="editor-actions">
           <button 
             onClick={handleSave} 
@@ -99,6 +106,7 @@ const TextEditor = () => {
           </button>
         </div>
 
+        {/* Live preview section */}
         <div className="preview-section">
           <h3>Preview</h3>
           <div className="preview-content">

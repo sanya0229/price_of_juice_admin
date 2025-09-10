@@ -150,6 +150,7 @@
   line-height: 1.6;
 }
 
+/* HTML heading styles in preview */
 .preview-content h1,
 .preview-content h2,
 .preview-content h3,
@@ -158,13 +159,31 @@
 .preview-content h6 {
   color: #111827;
   margin: 16px 0 8px 0;
+  font-weight: bold;
 }
 
+.preview-content h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.preview-content h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.preview-content h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* Paragraph styles */
 .preview-content p {
   margin: 12px 0;
   color: #374151;
 }
 
+/* List styles */
 .preview-content ul,
 .preview-content ol {
   margin: 12px 0;
@@ -176,6 +195,7 @@
   color: #374151;
 }
 
+/* Link styles */
 .preview-content a {
   color: #3b82f6;
   text-decoration: underline;
@@ -185,12 +205,41 @@
   color: #2563eb;
 }
 
+/* Blockquote styles */
 .preview-content blockquote {
   border-left: 4px solid #3b82f6;
   padding-left: 16px;
   margin: 16px 0;
   font-style: italic;
   color: #6b7280;
+}
+
+/* Bold and italic text */
+.preview-content strong,
+.preview-content b {
+  font-weight: bold;
+}
+
+.preview-content em,
+.preview-content i {
+  font-style: italic;
+}
+
+/* Code styles */
+.preview-content code {
+  background-color: #f3f4f6;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+}
+
+.preview-content pre {
+  background-color: #f3f4f6;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 }
 
 .no-content {

@@ -33,7 +33,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h1>Price of Juice Admin</h1>
+        <h1>Admin Panel</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group">
             <label htmlFor="username">Username</label>
@@ -63,12 +63,6 @@ const Login = () => {
             {isLoading ? 'Signing in...' : 'Sign In'}
           </button>
         </form>
-        
-        <div className="login-info">
-          <p>Default credentials:</p>
-          <p><strong>Username:</strong> admin</p>
-          <p><strong>Password:</strong> admin</p>
-        </div>
       </div>
     </div>
   );
