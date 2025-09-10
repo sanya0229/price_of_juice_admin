@@ -19,7 +19,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "update_src": "sh bash_scripts/sendSrcToServer.sh",
+    "ssh_connect": "sh bash_scripts/sshConnect.sh",
+    "update_nginx": "sh bash_scripts/sendNginxToServer.sh",
+    "update_build": "sh bash_scripts/sendBuildToServer.sh",
+    "deploy": "yarn build && yarn update_build && rm -rf ./build"
   },
   "eslintConfig": {
     "extends": [
