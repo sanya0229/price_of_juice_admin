@@ -8,6 +8,8 @@
       <change afterPath="$PROJECT_DIR$/../agt_software" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../casual_games_platform" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../price_of_juice" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,9 @@
       <workItem from="1757327920475" duration="1069000" />
       <workItem from="1757424160002" duration="2922000" />
       <workItem from="1757520386654" duration="1955000" />
-      <workItem from="1757522627754" duration="1087000" />
+      <workItem from="1757522627754" duration="1403000" />
+      <workItem from="1757540112280" duration="6000" />
+      <workItem from="1757540972467" duration="30000" />
     </task>
     <servers />
   </component>
